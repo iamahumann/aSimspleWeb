@@ -1,0 +1,233 @@
+:root {
+  --text: #00ff00;
+  --accent: #ff0044;
+  --bg: #000;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 15px;
+  font-family: 'Share Tech Mono', monospace;color: var(--text);
+  background: var(--bg) url('Star.png') center/cover no-repeat fixed;
+}
+
+/* Logo */
+.logo {width: 20vh;height: 20vh;border-radius: 50%;border: 1px solid #ff0044;
+}
+
+/* Layout Boxes */
+.box,.box2,.container,.box4,.box5,.box6,.you {
+  width: 99%;
+  margin: 0 auto;
+}
+#gra{
+    position: fixed;
+  top: 10px;
+  right: 10px;
+  z-index: 1000;
+  background: transparent;
+  color: white;
+  padding: 10px;
+  border: none;
+  font-family: 'Share Tech Mono', monospace;
+  cursor: pointer;
+  
+}
+.box {
+  height: auto;
+  margin-top: auto;
+}
+
+.box2 {
+  animation: slide 0.5s alternate;
+}
+.contactme,.box{
+  margin-top: ;
+}
+.container{
+  margin-top: 6%;
+  text-align: center;
+  background-color: hsla(155, 93%, 0%, 0.425);
+  backdrop-filter: blur(50px);
+}
+
+.box4{
+  margin-top: 1%;
+  border: 1px solid var(--text);
+  background-color: hsla(155, 93%, 0%, 0.425);
+  backdrop-filter: blur(60px);
+}
+.box8{
+  width: 80%;
+  margin-top: 1%;
+  border: 1px solid var(--text);
+ background-color: hsla(0, 40%, 100%, 0.3);
+  backdrop-filter: blur(60px);
+}
+
+.box5 {
+  margin-top: 1%;
+  border: 1px solid #00ff00;
+  backdrop-filter: blur(10000px);
+}
+
+.box6 {
+  height: auto;
+  border: 1px solid #9317ff;
+  backdrop-filter: blur(60px);
+}
+
+.you {
+  margin-top: 1%;
+}
+
+/* Top section */
+.top {
+  margin-top: 0.6%;
+  text-align: center;
+  border: 1px solid cyan;
+  backdrop-filter: blur(20px);
+}
+
+/* Horizontal line with gradient */
+.mt {
+  height: 2px;
+  width: 80%;
+  margin-top: 1%;
+  background: linear-gradient(to right, transparent, var(--text), transparent);
+}
+/*button  */ 
+
+button{
+  border-radius: 10%;
+}
+/* Fixed Top Navigation Box */
+#box3 {
+  margin-top: 0.50%;
+  position: fixed;
+  top: 0;
+  z-index: 9999;
+  width: auto;
+  padding: 1%;
+  display: flex;
+  gap: 1rem;
+  background-color: black;
+  
+  
+}
+
+/* Button Styling */
+button {
+  border-radius: 10%;
+  padding: 0.5rem 1rem;
+  font-size: 20px;
+  font-family: 'Monospace', monospace;
+  color: var(--accent);
+  background-color: transparent;
+  border: 1px solid var(--text);
+  cursor: pointer;
+}
+
+/* Glitch Text Animation */
+.glitch-text {
+  position: relative;
+  color: var(--text);
+  animation: glitch 3s infinite forwards;
+}
+
+@keyframes glitch {
+  0% { text-shadow: 2px 0 red, -2px 0 blue; opacity: 0.8; }
+  20% { text-shadow: -2px 0 red, 2px 0 blue; opacity: 0.5; }
+  40% { text-shadow: 2px 2px lime, -2px -2px magenta; opacity: 1; }
+  60% { text-shadow: -2px 2px red, 2px -2px cyan; opacity: 0.8; }
+  100% { text-shadow: none; opacity: 1; }
+}
+
+/* Rotation Animation */
+.rot {
+  animation: rotateBox 3s linear infinite;
+}
+
+@keyframes rotateBox {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+/* Slide Animation */
+@keyframes slide {
+  0% { transform: translateX(0); opacity: 1; }
+  40% { transform: translateX(-100vw); opacity: 0; }
+  50% { transform: translateX(100vw); opacity: 0; }
+  100% { transform: translateX(0); opacity: 1; }
+}
+
+/* About Section */
+.about0 {
+  margin-left: 5%;
+  font-size: 20px;
+  white-space: pre-wrap;
+}
+
+/* Headings */
+h1 {
+  text-align: center;
+}
+
+/* Skills Grid */
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap:6%;
+  padding: 1rem;
+  text-align: center;
+}
+
+.skill-item {
+  color: var(--text);
+  text-decoration: none;
+  transition: transform 0.3s ease;
+}
+
+.skill-item:hover {
+  transform: scale(1.1);
+}
+
+.skill-item img {
+  width: 100px;
+  height: 100px;
+  margin-bottom: 8px;
+}
+
+.skill-item p {
+  font-size: 16px;
+}
+#ip-info{
+  text-align: center;
+}
+/* Loader Overlay */
+#loader {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10000;
+  transition: opacity 0.5s ease;
+}
+
+/* Spinner Animation */
+.spinner {
+  border: 8px solid #333;
+  border-top: 8px solid var(--accent);
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}

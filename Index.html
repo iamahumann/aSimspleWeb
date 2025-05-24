@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Rasintha_lakmal</title>
+  <link rel="stylesheet" href="New.css">
+  <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/jpeg" href="Mycatto.jpg" />
+</head>
+<body>
+<div id="gravity-container">
+  <!-- Loader -->
+  <div id="loader">
+    <div class="spinner"></div>
+    <h1 class="glitch-text" data-text="LOADING...">&lt;p&gt;LOADING+5SECS &lt;/p&gt;</h1>
+  </div>
+
+  <!-- Navigation -->
+  <div id="box3">
+    <a href="#aboutme"><button class="h">ABOUT_ME</button></a>
+    <a href="#you"><button class="you">ABOUT_YOU</button></a>
+    <a href="#skills"><button>SKILLS</button></a>
+    <a href="#contact"><button>CONTACT_ME</button></a>
+    <button id="gravity-toggle">Toggle Gravity</button>
+  </div>
+
+  <!-- Logo -->
+  <div class="container">
+    <div class="box">
+      <img src="Star.png" class="logo rot" alt="Logo" />
+    </div>
+  </div>
+
+  <div class="mt"></div>
+
+  <!-- Intro Heading -->
+  <div class="top">
+    <div class="box2">
+      <h1 class="in">&lt;h1&gt;HELLO , I'M Rasintha_lakmal&lt;/h1&gt;</h1>
+    </div>
+  </div>
+
+  <div class="mt"></div>
+
+  <!-- About Me -->
+  <section id="aboutme">
+    <div class="box4">
+      <pre class="about0 glitch-text">
+ABOUT_ME
+
+-- HELLO, I'M LAKMAL 
+----------------------
+
+>> A GUY WHO TRIES EVERYTHING
+<h3>THIS WEBSITE WAS MADE USING THE–<a href="" class="a">ACODE</a>–APP ON PLAY STORE</h3>
+>> BUILT ON ANDROID
+>> GOT DESIGN IDEAS (COLORS, TEXT, LAYOUT) FROM THE DARK WEB
+>> <i>GO DOWN.. COPIED THAT GRAVITY THING</i>
+      </pre>
+    </div>
+  </section>
+
+  <div class="mt"></div>
+
+  <!-- Skills -->
+  <section id="skills">
+    <div class="box5">
+      <h1>SKILLS</h1>
+      <div class="skills-grid">
+        <a href="https://www.arduino.cc/" target="_blank" class="skill-item">
+          <img src="https://cdn.worldvectorlogo.com/logos/arduino-1.svg" alt="Arduino"/>
+          <p>Arduino</p>
+        </a>
+        <a href="https://www.w3schools.com/cs/" target="_blank" class="skill-item">
+          <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/csharp/csharp-original.svg" alt="C#"/>
+          <p>C#</p>
+        </a>
+        <a href="https://www.w3schools.com/css/" target="_blank" class="skill-item">
+          <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg" alt="CSS3"/>
+          <p>CSS3</p>
+        </a>
+        <a href="https://www.w3.org/html/" target="_blank" class="skill-item">
+          <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" alt="HTML5"/>
+          <p>HTML5</p>
+        </a>
+        <a href="https://www.python.org" target="_blank" class="skill-item">
+          <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" alt="Python"/>
+          <p>Python</p>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <div class="mt"></div>
+
+  <!-- About You -->
+  <section id="you">
+    <div class="you">
+      <div class="box6">
+        <pre id="ip-info">Loading...</pre>
+        <h1>This is an absolute lie about you</h1>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact">
+    <div class="contactme">
+      <div class="box8">
+        <div class="skills-grid">
+          <h1 class="cen">CONTACT ME=></h1>
+        
+          <a href="https://discordapp.com/users/1222497429891584010" target="_blank" class="skill-item">
+            <img src="https://cdn0.iconfinder.com/data/icons/social-media-2346/512/Discord-01-1024.png" alt="Discord" width="40" height="40">
+            <p>DISCORD</p>
+          </a>
+          <a href="https://wa.me/qr/6OHGGCHSSUQ5G1" target="_blank" class="skill-item">
+            <img src="https://cdn4.iconfinder.com/data/icons/picons-social/57/23-whatsapp-2-1024.png" alt="WhatsApp">
+            <p>WHATSAPP</p>
+          </a>
+          <a href="https://youtube.com/@own2?si=AfVwpD701YukP1vp" target="_blank" class="skill-item">
+            <img src="https://cdn3.iconfinder.com/data/icons/picons-social/57/58-youtube-1024.png" alt="YouTube">
+            <p>YOUTUBE</p>
+          </a>
+          <a href="https://t.me/Microscopic_lakme" target="_blank" class="skill-item">
+            <img src="https://cdn0.iconfinder.com/data/icons/eon-social-media-contact-info-2/32/telegram_social_media_network_chat-1024.png" alt="">
+            <p>TELEGRAM</p>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <h1>FINISHED =>>> 24/MAY/11.33am</h1>
+
+  <!-- Loader Script -->
+  <script>
+    window.addEventListener('load', () => {
+      setTimeout(() => {
+        const loader = document.getElementById('loader');
+        loader.style.opacity = '0';
+        setTimeout(() => loader.style.display = 'none', 500);
+      }, 5000); // 5 seconds
+    });
+  </script>
+
+  <!-- Gravity Script -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/matter-js/0.19.0/matter.min.js"></script>
+  <script>
+    const { Engine, Render, World, Bodies, Mouse, MouseConstraint, Events } = Matter;
+
+    let gravityEnabled = false;
+    let engine, render, mouseConstraint;
+    const toggleBtn = document.getElementById('gravity-toggle');
+
+    toggleBtn.addEventListener('click', () => {
+      gravityEnabled = !gravityEnabled;
+
+      if (gravityEnabled) {
+        engine = Engine.create();
+        render = Render.create({
+          element: document.body,
+          engine: engine,
+          options: {
+            width: window.innerWidth,
+            height: window.innerHeight,
+            wireframes: false,
+            background: 'transparent'
+          }
+        });
+
+        const elements = document.querySelectorAll(' .glitch-text, .h, .you, .container, .box, .logo, .rot, .mt, .top, .box2, .in, .box4, .about0, .a, .box5, .skills-grid, .skill-item, .box6, .contactme, .box8');
+        const bodies = [];
+
+        elements.forEach(el => {
+          const rect = el.getBoundingClientRect();
+          const body = Bodies.rectangle(
+            rect.left + rect.width / 2 + window.scrollX,
+            rect.top + rect.height / 2 + window.scrollY,
+            rect.width,
+            rect.height,
+            { restitution: 0.7, render: { fillStyle: 'transparent' } }
+          );
+          bodies.push({ el, body, rect });
+          World.add(engine.world, body);
+        });
+
+        const w = document.body.scrollWidth;
+        const h = document.body.scrollHeight;
+        const thickness = 100;
+
+        const walls = [
+          Bodies.rectangle(w / 2, h + thickness / 2, w, thickness, { isStatic: true }),
+          Bodies.rectangle(w / 2, -thickness / 2, w, thickness, { isStatic: true }),
+          Bodies.rectangle(-thickness / 2, h / 2, thickness, h, { isStatic: true }),
+          Bodies.rectangle(w + thickness / 2, h / 2, thickness, h, { isStatic: true })
+        ];
+        World.add(engine.world, walls);
+
+        const mouse = Mouse.create(render.canvas);
+        mouseConstraint = MouseConstraint.create(engine, {
+          mouse: mouse,
+          constraint: { stiffness: 0.2, render: { visible: false } }
+        });
+        World.add(engine.world, mouseConstraint);
+
+        Events.on(engine, 'afterUpdate', () => {
+          bodies.forEach(({ el, body, rect }) => {
+            el.style.position = 'absolute';
+            el.style.left = `${body.position.x - rect.width / 2}px`;
+            el.style.top = `${body.position.y - rect.height / 2}px`;
+          });
+        });
+
+        Engine.run(engine);
+        Render.run(render);
+
+      } else {
+        location.reload();
+      }
+    });
+  </script>
+
+  <!-- IP Info Script -->
+  <script>
+    fetch('https://ipwho.is/')
+      .then(res => res.json())
+      .then(data => {
+        document.getElementById('ip-info').textContent = `
+IP Address: ${data.ip}
+City: ${data.city}
+Region: ${data.region}
+Country: ${data.country}
+ISP: ${data.connection?.isp || 'N/A'} 
+Timezone: ${data.timezone?.id || 'N/A'}
+        `.trim();
+      })
+      .catch(() => {
+        document.getElementById('ip-info').textContent = 'Failed to fetch IP info.';
+      });
+  </script>
+
+</body>
+</html>
