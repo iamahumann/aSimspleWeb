@@ -95,7 +95,7 @@ body {
   height: 2px;
   width: 80%;
   margin-top: 1%;
-  background: linear-gradient(to right, transparent, var(--text), transparent);
+  background: linear-gradient(to right, transparent, red, transparent);
 }
 /*button  */ 
 
